@@ -1,0 +1,325 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .formhead{
+    display: block !important;
+    text-align:justify ;
+  }
+  .heros1{
+    width: 90%;
+  }
+  .cardteaxt{
+    font-size: 0px !important; 
+  }
+  .carditem{
+    width: 250px !important;
+    height: 440px !important;
+    margin-top: 40px;
+    margin-left: 110px !important;
+    text-align: center;
+    gap: 10px;
+  
+  }
+  
+  
+  .herocartimg{
+    width: 40px !important;
+    height: 140px !important;
+  }
+  .linkedin{
+    color: #61dafb;
+    margin-right: 20px;
+    font-size:19px !important;
+  }
+  .insta{
+    color: red;
+    margin-right: 20px;
+    font-size:19px !important;
+  }
+  .github{
+    color: white;
+    margin-right: 20px;
+    font-size:19px !important;
+  }
+  .email{
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .password{
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+  color: white !important;
+}
+
+
+
+.formhead{
+  display: flex;
+}
+
+.logo{
+  width: 55px;
+  margin-left: 40px;
+}
+.headernav{
+  color: rgb(191, 172, 116);
+  background-color: rgb(29, 28, 26);
+  position: fixed !important;
+  z-index: 99 ;
+  width: 100% ;
+}
+.headerlink{
+  margin-right: 90px;
+  border-bottom: 2px solid transparent;
+  font-size: 18px !important;
+}
+.headerlink1{
+  margin-right: 100px;
+  border-bottom: 2px solid transparent;
+  font-size: 18px !important;
+}
+.headerlink2{
+  margin-right: 90px;
+  border-bottom: 2px solid transparent;
+  font-size: 18px !important;
+}
+.headerlink:hover{
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid rgb(191, 172, 116);
+  
+}
+.headerlink1:hover{
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid rgb(191, 172, 116);
+  
+}
+.headerlink2:hover{
+  color: rgb(255, 255, 255) !important;
+  border-bottom: 2px solid rgb(191, 172, 116);
+  
+}
+.toggle{
+  color: rgb(191, 172, 116) !important;
+  background-color:white !important;
+}
+.cardteaxt{
+  color: black;
+}
+.hero{
+  background-color: rgb(29, 28, 26) !important;
+  padding-top: 70px;
+}
+.heros1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: 2%
+}
+.cardhero{
+  width: 80%;
+  margin-left: 12%;
+  padding-top: 25px;
+}
+.star{
+  color: rgb(246, 255, 0);
+  font-size:22px;
+}
+.allproducts{
+  color: rgb(191, 172, 116);
+  text-align: center;
+  padding-top: 40px;
+}
+.herocartimg{
+  width: 50% !important;
+  margin-left: 22% !important;
+  height: 160px ;
+  margin-top: 10px !important;
+}
+.cardherocad{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.carditem{
+  width: 290px;
+  height: 440px !important;
+  margin-top: 40px;
+  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 4px solid rgb(191, 172, 116) !important;
+  border-radius: 20px !important;
+}
+.carditem:hover{
+  border:5px solid rgb(199, 193, 193)  !important;
+  cursor: pointer !important;
+}
+.cardbodyhero{
+  margin-top: 2px;
+  text-align: center;
+  background-color:  rgb(29, 28, 26) !important;
+  color:  rgb(191, 172, 116) !important;
+  border-radius: 10px !important; 
+}
+.datacothero{
+  height: 40px;
+  text-align: center !important;
+}
+.titleheor{
+  height: 60px;
+  font-size: 15px !important;
+}
+.button{
+  background-color:  rgb(0, 0, 0) !important;
+  color: #ffffff !important;
+  border: 2px solid rgb(191, 172, 116) !important;
+}
+.button:hover{
+  color: rgb(0, 0, 0) !important;
+  background-color: white !important;
+}
+.footertitle{
+  background-color:rgb(29, 28, 26);
+  color: rgb(191, 172, 116);
+}
+.footer{
+  background-color: rgb(29, 28, 26);
+  padding: 4px;
+}
+.footerli{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+ 
+}
+.linkedin{
+  color: #0234fd;
+  margin-right: 20px;
+  font-size:30px;
+}
+.insta{
+  color: rgb(162, 0, 0);
+  margin-right: 20px;
+  font-size:30px;
+}
+.github{
+  color: white;
+  margin-right: 20px;
+  font-size:30px;
+}
+.footerbar{
+  color: rgb(0, 0, 0);
+  background-color: rgb(191, 172, 116);
+  padding: 10px;
+  margin-bottom: 0%;
+}
+.headerlinkl{
+  text-decoration: none;
+  color:rgb(191, 172, 116);
+}
+.detproducts{
+  color:rgb(191, 172, 116);
+  padding-top: 140px !important;
+}
+.allcarddet{
+  background-color: rgb(29, 28, 26);
+}
+.sigintag{
+  color: rgb(191, 172, 116);
+  padding-top: 130px;
+  background-color: rgb(29, 28, 26);
+  height:590px;
+}
+.sininbutton:hover{
+  color: rgb(191, 172, 116);
+  background: #000000;
+}
+.sininbutton{
+  color: white;
+  background-color:rgb(29, 28, 26);
+  padding: 10px;
+  border: 2px solid rgb(191, 172, 116);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100px;
+  
+}
+.email{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: rgb(29, 28, 26) !important ;
+  color: rgb(191, 172, 116) !important;
+  border: 2px solid rgb(191, 172, 116) ;
+  border-radius: 20px;
+}
+.password{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 10px;
+  margin-bottom: 50px;
+  background-color: rgb(29, 28, 26) !important ;
+  color: rgb(191, 172, 116) !important;
+  border: 2px solid rgb(191, 172, 116) ;
+  border-radius: 20px;
+}
