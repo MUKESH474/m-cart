@@ -4,9 +4,9 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import img1 from '../img/img1.jpg'
-import { Link } from 'react-router-dom';
+import { data, Link } from 'react-router-dom';
 
-function Header(){
+function Header({cartItems}){
     return(
             <Navbar expand="lg" className="headernav">
             <Container fluid>
@@ -26,7 +26,7 @@ function Header(){
                 <Nav.Link href="#action2"  className='headerlink'><Link to={'/Jewelery'} className='headerlinkl'>Jewelery</Link></Nav.Link>
                 <Nav.Link href="#action1 "  className='headerlink'><Link to={'/Electronics'} className='headerlinkl'>Electronics</Link></Nav.Link>
                 <Nav.Link href="#action2"  className='headerlink1'><Link to={'/sigin'} className='headerlinkl'>Login</Link></Nav.Link>
-                <Nav.Link href="#action2"  className='headerlink2'><Link to={'/'} className='headerlinkl'>Cart</Link></Nav.Link>
+                <Nav.Link href="#action2"  className='headerlink2'><Link to={'/cart'} className='headerlinkl'>Cart <span className='ml-1' id='cart_count'> {cartItems} </span></Link></Nav.Link>
                 </Form>
             </Navbar.Collapse>
             </Container>

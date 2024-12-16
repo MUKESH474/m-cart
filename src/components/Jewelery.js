@@ -3,6 +3,7 @@ import { MdStarHalf } from "react-icons/md";
 import { FaCartPlus } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {createSearchParams, useNavigate } from 'react-router-dom';
 function Jewelery(){
     const[data,setdata]=useState()
         useEffect(()=>{
@@ -11,6 +12,14 @@ function Jewelery(){
             .then(ans=>setdata(ans))
             .catch(ere=>console.log(ere))
         },[])
+        const navigate=useNavigate()
+        const navi=(ids)=>{
+        console.log("see",ids);
+        navigate({
+            pathname:'/product',
+            search:createSearchParams({id:ids}).toString(),
+        })
+    }
     return(
         <div >
             <div className=' container-fluid allcarddet '>
@@ -26,7 +35,7 @@ function Jewelery(){
                         <p  className='cardbodyhero'><b>Price :</b> {item.price} $ </p>
                         <p> <b>Rating :</b> {item.rating.rate} <MdStarHalf className='star' /> </p>
                         <p> <b>Count :</b> {item.rating.count} <FaCartPlus /> </p>
-                        <Button className='button'>View Products</Button>
+                        <Button className='button' onClick={(event)=>navi(item.id)}>View Products</Button>
                         </div>
                     </Card.Body>
                     </Card>

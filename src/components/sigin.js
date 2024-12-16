@@ -25,6 +25,7 @@ function Sigin(){
             <button onClick={submithand} className='sininbutton' > Submit </button>
             {message && <p style={{color:"white"}}>{message}</p>}
         </div>
+
     )
 }
 export default Sigin
